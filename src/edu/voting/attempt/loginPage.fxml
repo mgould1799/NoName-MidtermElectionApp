@@ -17,7 +17,7 @@
       <Label layoutX="255.0" layoutY="6.0" text="Voting System" />
       <TextField layoutX="217.0" layoutY="160.0" text="Username" />
       <TextField layoutX="217.0" layoutY="187.0" text="Password" />
-      <Button layoutX="217.0" layoutY="217.0" mnemonicParsing="false" onAction="#pressLogin" prefHeight="27.0" prefWidth="83.0" text="Log In" />
+      <Button fx:id="logInButton" layoutX="217.0" layoutY="217.0" mnemonicParsing="false" onAction="#pressLogin" prefHeight="27.0" prefWidth="83.0" text="Log In" />
       <Button layoutX="300.0" layoutY="217.0" mnemonicParsing="false" onAction="#pressReg" prefHeight="27.0" prefWidth="83.0" text="Sign Up" />
    </children>
 </AnchorPane>
