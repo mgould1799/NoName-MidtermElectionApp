@@ -7,7 +7,7 @@
 <AnchorPane prefHeight="137.0" prefWidth="281.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.voting.attempt.SubmitController">
    <children>
       <Button fx:id="done" layoutX="222.0" layoutY="97.0" mnemonicParsing="false" onAction="#pressDone" text="Done" />
-      <Label layoutX="54.0" layoutY="33.0" prefHeight="27.0" prefWidth="188.0" text="You have succesffully voted." />
+      <Label layoutX="54.0" layoutY="33.0" prefHeight="27.0" prefWidth="188.0" text="You have successfully voted." />
       <Label layoutX="80.0" layoutY="60.0" text="Click done to return" />
    </children>
 </AnchorPane>
