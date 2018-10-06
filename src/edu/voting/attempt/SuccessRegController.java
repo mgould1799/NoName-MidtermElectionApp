@@ -9,8 +9,12 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class SuccessRegController {
+
+    @FXML
+    private javafx.scene.control.Button returnLogIn;
     public void pressLogIn(ActionEvent event) throws Exception {
         try {
+            returnLogIn.getScene().getWindow().hide();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("loginPage.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();

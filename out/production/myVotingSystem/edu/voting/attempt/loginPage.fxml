@@ -22,6 +22,6 @@
       <TextField layoutX="217.0" layoutY="160.0" text="Username" />
       <TextField layoutX="217.0" layoutY="187.0" text="Password" />
       <Button fx:id="logInButton" layoutX="217.0" layoutY="217.0" mnemonicParsing="false" onAction="#pressLogin" prefHeight="27.0" prefWidth="83.0" text="Log In" />
-      <Button layoutX="300.0" layoutY="217.0" mnemonicParsing="false" onAction="#pressReg" prefHeight="27.0" prefWidth="83.0" text="Sign Up" />
+      <Button fx:id="regButton" layoutX="300.0" layoutY="217.0" mnemonicParsing="false" onAction="#pressReg" prefHeight="27.0" prefWidth="83.0" text="Register" />
    </children>
 </AnchorPane>

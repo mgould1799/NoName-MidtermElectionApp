@@ -20,6 +20,8 @@ import java.util.ResourceBundle;
 public class LoginPageController  {
     // Buttons
     @FXML private javafx.scene.control.Button logInButton;
+    // Buttons
+    @FXML private javafx.scene.control.Button regButton;
 
     //ChoiceBox
     @FXML
@@ -29,7 +31,8 @@ public class LoginPageController  {
 
     public void pressReg(ActionEvent event) throws Exception {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("successReg.fxml"));
+            regButton.getScene().getWindow().hide();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("signUp.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
