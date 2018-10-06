@@ -6,6 +6,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.voting.attempt.LoginPageController">
    <children>
@@ -14,7 +15,10 @@
             <Image url="@scflag.png" />
          </image>
       </ImageView>
-      <Label layoutX="255.0" layoutY="6.0" text="Voting System" />
+      <Label alignment="CENTER" layoutX="207.0" layoutY="14.0" prefHeight="47.0" prefWidth="186.0" text="FoF Systems" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="Felix Titling" size="24.0" />
+         </font></Label>
       <TextField layoutX="217.0" layoutY="160.0" text="Username" />
       <TextField layoutX="217.0" layoutY="187.0" text="Password" />
       <Button fx:id="logInButton" layoutX="217.0" layoutY="217.0" mnemonicParsing="false" onAction="#pressLogin" prefHeight="27.0" prefWidth="83.0" text="Log In" />
