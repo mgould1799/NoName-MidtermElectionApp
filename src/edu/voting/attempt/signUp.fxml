@@ -133,6 +133,6 @@
       </GridPane>
       <Label layoutX="54.0" layoutY="43.0" text="Correctly Enter the Following Information" textFill="#f2f2f2" />
       <Button fx:id="register" layoutX="522.0" layoutY="424.0" mnemonicParsing="false" onAction="#pressRegister" text="Register" />
-      <Button layoutX="448.0" layoutY="424.0" mnemonicParsing="false" text="Cancel" />
+      <Button fx:id="cancel" layoutX="448.0" layoutY="424.0" mnemonicParsing="false" onAction="#pressCancel" text="Cancel" />
    </children>
 </AnchorPane>
