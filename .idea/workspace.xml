@@ -150,13 +150,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/voting/attempt/stylesheet.css">
+<<<<<<< HEAD
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
             </state>
           </provider>
+=======
+          <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> f6a732c48cb606bb4a7ebcf74d174f94b504bc5b
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -191,6 +195,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/voting/attempt/SignUpController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -199,6 +204,13 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/voting/attempt/votingArea.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+>>>>>>> f6a732c48cb606bb4a7ebcf74d174f94b504bc5b
             </state>
           </provider>
         </entry>
@@ -299,7 +311,11 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540301110473" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540301107222" />
+>>>>>>> f6a732c48cb606bb4a7ebcf74d174f94b504bc5b
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -437,13 +453,21 @@
       <workItem from="1538833499205" duration="2023000" />
       <workItem from="1538881786863" duration="465000" />
       <workItem from="1540258002896" duration="2008000" />
+<<<<<<< HEAD
       <workItem from="1540298616948" duration="1130000" />
       <workItem from="1540300756279" duration="281000" />
+=======
+      <workItem from="1540298616948" duration="2079000" />
+>>>>>>> f6a732c48cb606bb4a7ebcf74d174f94b504bc5b
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="14270000" />
+=======
+    <option name="totallyTimeSpent" value="14938000" />
+>>>>>>> f6a732c48cb606bb4a7ebcf74d174f94b504bc5b
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
@@ -457,7 +481,11 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32673267" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32738853" />
+>>>>>>> f6a732c48cb606bb4a7ebcf74d174f94b504bc5b
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -582,6 +610,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/edu/voting/attempt/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -589,6 +618,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> f6a732c48cb606bb4a7ebcf74d174f94b504bc5b
     <entry file="file://$PROJECT_DIR$/src/edu/voting/attempt/loginPage.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
@@ -608,6 +639,7 @@
     <entry file="file://$PROJECT_DIR$/src/edu/voting/attempt/votingArea.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="280">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
@@ -620,8 +652,15 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="362">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+>>>>>>> f6a732c48cb606bb4a7ebcf74d174f94b504bc5b
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/voting/attempt/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
