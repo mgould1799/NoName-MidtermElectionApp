@@ -16,7 +16,7 @@ public class login extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
         primaryStage.setTitle("Voter Login");
         Scene scene= new Scene(root, 600, 400);
-        scene.getStylesheets().add("//stylesheet.css");
+        scene.getStylesheets().add(getClass().getResource("stylesheet.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.show();
     }
