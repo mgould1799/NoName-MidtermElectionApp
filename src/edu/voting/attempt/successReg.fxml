@@ -4,9 +4,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.voting.attempt.SuccessRegController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.voting.attempt.SuccessRegController">
    <children>
-      <Label layoutX="202.0" layoutY="170.0" text="You have succesfully registered" />
+      <Label layoutX="202.0" layoutY="170.0" text="You have succesfully registered" textFill="#fffefe" />
       <Button fx:id="returnLogIn" layoutX="530.0" layoutY="359.0" mnemonicParsing="false" onAction="#pressLogIn" text="Return" />
    </children>
 </AnchorPane>

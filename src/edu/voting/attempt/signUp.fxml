@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.voting.attempt.SignUpController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.voting.attempt.SignUpController">
    <children>
       <GridPane layoutX="11.0" layoutY="76.0" prefHeight="348.0" prefWidth="304.0">
         <columnConstraints>
@@ -34,72 +33,72 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label alignment="CENTER" text="First Name" textAlignment="RIGHT" GridPane.rowIndex="1">
+            <Label alignment="CENTER" text="First Name" textAlignment="RIGHT" textFill="#f5f5f5" GridPane.rowIndex="1">
                <padding>
                   <Insets left="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" text="SSN" textAlignment="RIGHT" GridPane.rowIndex="4">
+            <Label alignment="CENTER" text="SSN" textAlignment="RIGHT" textFill="#eeebeb" GridPane.rowIndex="4">
                <padding>
                   <Insets left="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" text="DL Number" textAlignment="RIGHT" GridPane.rowIndex="5">
+            <Label alignment="CENTER" text="DL Number" textAlignment="RIGHT" textFill="#eee9e9" GridPane.rowIndex="5">
                <padding>
                   <Insets left="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" text="Last Name" textAlignment="RIGHT" GridPane.rowIndex="2">
+            <Label alignment="CENTER" text="Last Name" textAlignment="RIGHT" textFill="#f5f4f4" GridPane.rowIndex="2">
                <padding>
                   <Insets left="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" text="Date of Birth" textAlignment="RIGHT" GridPane.rowIndex="3">
+            <Label alignment="CENTER" text="Date of Birth" textAlignment="RIGHT" textFill="#fffdfd" GridPane.rowIndex="3">
                <padding>
                   <Insets left="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" text="AddressLO" textAlignment="RIGHT" GridPane.rowIndex="6">
+            <Label alignment="CENTER" text="AddressLO" textAlignment="RIGHT" textFill="#e8e4e4" GridPane.rowIndex="6">
                <padding>
                   <Insets left="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" text="City" textAlignment="RIGHT" GridPane.rowIndex="8">
+            <Label alignment="CENTER" text="City" textAlignment="RIGHT" textFill="#f5f2f2" GridPane.rowIndex="8">
                <padding>
                   <Insets left="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" text="State" textAlignment="RIGHT" GridPane.rowIndex="9">
+            <Label alignment="CENTER" text="State" textAlignment="RIGHT" textFill="#fffafa" GridPane.rowIndex="9">
                <padding>
                   <Insets left="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" text="Zip" textAlignment="RIGHT" GridPane.rowIndex="10">
+            <Label alignment="CENTER" text="Zip" textAlignment="RIGHT" textFill="#f2f0f0" GridPane.rowIndex="10">
                <padding>
                   <Insets left="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" text="User Name" textAlignment="RIGHT" GridPane.rowIndex="11">
+            <Label alignment="CENTER" text="User Name" textAlignment="RIGHT" textFill="#ebebeb" GridPane.rowIndex="11">
                <padding>
                   <Insets left="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" text="Password" textAlignment="RIGHT" GridPane.rowIndex="12">
+            <Label alignment="CENTER" text="Password" textAlignment="RIGHT" textFill="#f8f8f8" GridPane.rowIndex="12">
                <padding>
                   <Insets left="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" text="VID" textAlignment="RIGHT" GridPane.rowIndex="13">
+            <Label alignment="CENTER" text="VID" textAlignment="RIGHT" textFill="#ebe2e2" GridPane.rowIndex="13">
                <padding>
                   <Insets left="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" text="VID" textAlignment="RIGHT">
+            <Label alignment="CENTER" text="VID" textAlignment="RIGHT" textFill="#fcfafa">
                <padding>
                   <Insets left="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" text="AddressLT" textAlignment="RIGHT" GridPane.rowIndex="7">
+            <Label alignment="CENTER" text="AddressLT" textAlignment="RIGHT" textFill="#f8f7f7" GridPane.rowIndex="7">
                <padding>
                   <Insets left="50.0" />
                </padding>
@@ -132,7 +131,7 @@
             <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
          </children>
       </GridPane>
-      <Label layoutX="54.0" layoutY="43.0" text="Correctly Enter the Following Information" />
+      <Label layoutX="54.0" layoutY="43.0" text="Correctly Enter the Following Information" textFill="#f2f2f2" />
       <Button fx:id="register" layoutX="522.0" layoutY="424.0" mnemonicParsing="false" onAction="#pressRegister" text="Register" />
       <Button layoutX="448.0" layoutY="424.0" mnemonicParsing="false" text="Cancel" />
    </children>
