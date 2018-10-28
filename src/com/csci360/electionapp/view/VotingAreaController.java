@@ -1,4 +1,4 @@
-package edu.voting.attempt;
+package com.csci360.electionapp.view;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -7,7 +7,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
 
@@ -43,7 +42,7 @@ public class VotingAreaController {
     public void pressSubmit(ActionEvent event) throws Exception {
         try{
             submit.getScene().getWindow().hide();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("successSubmit.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SuccessSubmit.fxml"));
             Parent root2 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root2));

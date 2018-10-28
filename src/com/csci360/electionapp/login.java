@@ -1,22 +1,20 @@
-package edu.voting.attempt;
+package com.csci360.electionapp;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
 
 
 public class login extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("view/loginPage.fxml"));
         primaryStage.setTitle("Voter Login");
         Scene scene= new Scene(root, 600, 400);
-        scene.getStylesheets().add(getClass().getResource("stylesheet.css").toExternalForm());
+        //scene.getStylesheets().add(getClass().getResource("stylesheet.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.show();
     }

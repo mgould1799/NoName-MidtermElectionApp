@@ -1,4 +1,4 @@
-package edu.voting.attempt;
+package com.csci360.electionapp.view;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
