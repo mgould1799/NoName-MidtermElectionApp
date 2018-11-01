@@ -10,7 +10,6 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csci360.electionapp.view.SignUpController">
    <children>
-      <Label layoutX="54.0" layoutY="43.0" text="Correctly Enter the Following Information" textFill="#f2f2f2" />
       <Button fx:id="register" layoutX="522.0" layoutY="424.0" mnemonicParsing="false" onAction="#pressRegister" text="Register" />
       <Button fx:id="cancel" layoutX="448.0" layoutY="424.0" mnemonicParsing="false" onAction="#pressCancel" text="Cancel" />
       <GridPane layoutX="54.0" layoutY="124.0" prefHeight="238.0" prefWidth="275.0">
@@ -44,5 +43,7 @@
             <Label text="Password" textFill="#f2eded" GridPane.rowIndex="6" />
          </children>
       </GridPane>
+      <Label fx:id="userHasBeenUsed" layoutX="284.0" layoutY="76.0" />
+      <Label fx:id="change" layoutX="153.0" layoutY="76.0" onInputMethodTextChanged="#pressRegister" text="Enter the following information below to register" textFill="#f8f7f7" />
    </children>
 </AnchorPane>

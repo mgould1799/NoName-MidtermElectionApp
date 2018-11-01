@@ -1,10 +1,7 @@
 package com.csci360.electionapp.model;
 
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 
 public class Voter {
@@ -17,8 +14,22 @@ public class Voter {
     private String userName;
     private String password;
 
-
-
+    /**
+     * creates the default contstructor and makes it private
+     * this way it can't be accessed
+     */
+    private Voter(){
+    }
+    /**
+     * Constructor
+     * @param firstName
+     * @param lastName
+     * @param dateOfBirth
+     * @param socialSecurityNumber
+     * @param address
+     * @param userName
+     * @param password
+     */
     public Voter(String firstName, String lastName, String dateOfBirth, String socialSecurityNumber, String address, String userName, String password){
         this.setFirstName(firstName);
         this.setLastName(lastName);
@@ -29,7 +40,10 @@ public class Voter {
         this.setPassword(password);
     }
 
-
+    /**
+     *
+     * Setter and getter methods below for each attribute of a voter
+     */
     public String getFirstName() {
         return firstName;
     }
@@ -91,6 +105,10 @@ public class Voter {
     }
 
 
+    /**
+     * Stores a voter in the csv
+     * @param v
+     */
     public void storeVoter(Voter v) {
 
          String COMMA_DELIMITER = ",";
@@ -135,6 +153,49 @@ public class Voter {
                 System.out.println("error while closing file writer");
             }
         }
+
+    }
+
+    /**
+     * Checks to see if a voter is in a the voters.csv
+     * @param v
+     * @return
+     */
+    public boolean isUserNameTaken(Voter v){
+        BufferedReader fileReader=null;
+        //try to read the file. if it fails, the catch prints the stack trace
+        try{
+            fileReader=new BufferedReader(new FileReader("voters.csv"));
+            String line="";
+                while ((line = fileReader.readLine()) != null) {
+                    //get all tokens available in a line by splitting it by the commas
+                    String[] tokens = line.split(",");
+                    if(tokens.length>0) {
+                        //creates a tempory voter
+                        Voter tempVoter=new Voter(tokens[0],tokens[1],tokens[2],tokens[3],tokens[4],tokens[5],tokens[6]);
+                        //if the userName exists it returns true
+                        if(tempVoter.userName.equals(v.userName))
+                            return true;
+                    }
+
+                }
+
+        }
+        catch(Exception e){
+            System.out.println("Error while reading csv");
+            System.out.println(e);
+            e.printStackTrace();;
+        }
+        finally{
+            try{
+                fileReader.close();
+            }
+            catch(IOException e){
+                System.out.println("error while closing file reader");
+            }
+        }
+        return false;
+
 
     }
 
