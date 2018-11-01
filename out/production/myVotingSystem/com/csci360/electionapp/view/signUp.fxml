@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -11,128 +10,39 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csci360.electionapp.view.SignUpController">
    <children>
-      <GridPane layoutX="11.0" layoutY="76.0" prefHeight="348.0" prefWidth="304.0">
+      <Label layoutX="54.0" layoutY="43.0" text="Correctly Enter the Following Information" textFill="#f2f2f2" />
+      <Button fx:id="register" layoutX="522.0" layoutY="424.0" mnemonicParsing="false" onAction="#pressRegister" text="Register" />
+      <Button fx:id="cancel" layoutX="448.0" layoutY="424.0" mnemonicParsing="false" onAction="#pressCancel" text="Cancel" />
+      <GridPane layoutX="54.0" layoutY="124.0" prefHeight="238.0" prefWidth="275.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.5999755859375" minWidth="10.0" prefWidth="140.0000057220459" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="448.20001220703125" minWidth="10.0" prefWidth="164.39999427795408" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label alignment="CENTER" text="First Name" textAlignment="RIGHT" textFill="#f5f5f5" GridPane.rowIndex="1">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" text="SSN" textAlignment="RIGHT" textFill="#eeebeb" GridPane.rowIndex="4">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" text="DL Number" textAlignment="RIGHT" textFill="#eee9e9" GridPane.rowIndex="5">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" text="Last Name" textAlignment="RIGHT" textFill="#f5f4f4" GridPane.rowIndex="2">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" text="Date of Birth" textAlignment="RIGHT" textFill="#fffdfd" GridPane.rowIndex="3">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" text="AddressLO" textAlignment="RIGHT" textFill="#e8e4e4" GridPane.rowIndex="6">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" text="City" textAlignment="RIGHT" textFill="#f5f2f2" GridPane.rowIndex="8">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" text="State" textAlignment="RIGHT" textFill="#fffafa" GridPane.rowIndex="9">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" text="Zip" textAlignment="RIGHT" textFill="#f2f0f0" GridPane.rowIndex="10">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" text="User Name" textAlignment="RIGHT" textFill="#ebebeb" GridPane.rowIndex="11">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" text="Password" textAlignment="RIGHT" textFill="#f8f8f8" GridPane.rowIndex="12">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" text="VID" textAlignment="RIGHT" textFill="#ebe2e2" GridPane.rowIndex="13">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" text="VID" textAlignment="RIGHT" textFill="#fcfafa">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" text="AddressLT" textAlignment="RIGHT" textFill="#f8f7f7" GridPane.rowIndex="7">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Label>
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
-            <TextField prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <TextField fx:id="firstName" GridPane.columnIndex="1" />
+            <TextField fx:id="lastName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="dateOfBirth" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="address" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="socialSecurityNumber" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="userName" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="First name" textFill="#fffdfd" />
+            <Label text="Last Name" textFill="#f8f5f5" GridPane.rowIndex="1" />
+            <Label text="DOB" textFill="#f5f5f5" GridPane.rowIndex="2" />
+            <Label text="Adress" textFill="#fcfafa" GridPane.rowIndex="3" />
+            <Label text="SSN" textFill="#fffdfd" GridPane.rowIndex="4" />
+            <Label text="Username" textFill="#fcf7f7" GridPane.rowIndex="5" />
+            <Label text="Password" textFill="#f2eded" GridPane.rowIndex="6" />
          </children>
       </GridPane>
-      <Label layoutX="54.0" layoutY="43.0" text="Correctly Enter the Following Information" textFill="#f2f2f2" />
-      <Button fx:id="register" layoutX="522.0" layoutY="424.0" mnemonicParsing="false" onAction="#pressRegister" text="Register" />
-      <Button fx:id="cancel" layoutX="448.0" layoutY="424.0" mnemonicParsing="false" onAction="#pressCancel" text="Cancel" />
    </children>
 </AnchorPane>

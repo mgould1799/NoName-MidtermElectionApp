@@ -5,14 +5,32 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
+import com.csci360.electionapp.model.Voter;
 public class SignUpController {
 
     @FXML
     private javafx.scene.control.Button register;
     @FXML
     private javafx.scene.control.Button cancel;
+
+
+    @FXML
+    private TextField firstName;
+    @FXML
+    private TextField lastName;
+    @FXML
+    private TextField address;
+    @FXML
+    private TextField dateOfBirth;
+    @FXML
+    private TextField socialSecurityNumber;
+    @FXML
+    private TextField userName;
+    @FXML
+    private TextField password;
+
 
     public void pressCancel(ActionEvent event) throws Exception {
         try{
@@ -28,6 +46,8 @@ public class SignUpController {
     }
 
     public void pressRegister(ActionEvent event) throws Exception {
+        Voter newVoter=new Voter(firstName.getText(),lastName.getText(),dateOfBirth.getText(),address.getText(),socialSecurityNumber.getText(),userName.getText(),password.getText());
+        newVoter.storeVoter(newVoter);
         try{
             register.getScene().getWindow().hide();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("successReg.fxml"));
