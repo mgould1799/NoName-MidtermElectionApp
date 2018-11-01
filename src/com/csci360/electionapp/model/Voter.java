@@ -138,6 +138,8 @@ public class Voter {
 
     }
 
+    //com.csci360.electionapp.model.storeVoter followed this tutorial to store the voters in the csv file
+
 
 
 }
