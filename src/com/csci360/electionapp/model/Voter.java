@@ -108,9 +108,9 @@ public class Voter {
      */
     public void storeVoter(Voter v) {
 
-         String COMMA_DELIMITER = ",";
+        String COMMA_DELIMITER = ",";
 
-         String NEW_LINE_SEPARATOR = "\n";
+        String NEW_LINE_SEPARATOR = "\n";
 
         String FILE_HEADER = "firstName,lastName,dateOfBirth,socialSecurityNumber,address,userName,password";
 
@@ -273,6 +273,7 @@ public class Voter {
 
 
     }
+    //
 
 
 

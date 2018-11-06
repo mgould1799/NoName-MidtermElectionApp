@@ -31,6 +31,10 @@ public class LoginPageController  {
 
     Voter random= new Voter();
 
+    // Admit Credentials
+    String adminUserName = "admin";
+    String adminPW = "admin";
+
 
 
     public void pressReg(ActionEvent event) throws Exception {
@@ -47,11 +51,11 @@ public class LoginPageController  {
     }
     @FXML
     public void pressLogin(ActionEvent event) throws Exception {
-
-        if(random.verifyPassword(passwordField.getText())&&random.verifyUserName(usernameField.getText())) {
+        if (usernameField.getText().equalsIgnoreCase(adminUserName) && passwordField.getText().equalsIgnoreCase(adminPW))
+        {
             try {
                 logInButton.getScene().getWindow().hide();
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("votingArea.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("adminLogin.fxml"));
                 Parent root1 = (Parent) fxmlLoader.load();
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root1));
@@ -60,8 +64,21 @@ public class LoginPageController  {
                 e.printStackTrace();
             }
         }
-        else{
-            System.out.println("username and password doesn't exist. Try again.");
+        else {
+            if (random.verifyPassword(passwordField.getText()) && random.verifyUserName(usernameField.getText())) {
+                try {
+                    logInButton.getScene().getWindow().hide();
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("votingArea.fxml"));
+                    Parent root1 = (Parent) fxmlLoader.load();
+                    Stage stage = new Stage();
+                    stage.setScene(new Scene(root1));
+                    stage.show();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            } else {
+                System.out.println("username and password doesn't exist. Try again.");
+            }
         }
     }
 
