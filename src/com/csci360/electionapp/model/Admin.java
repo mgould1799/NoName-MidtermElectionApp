@@ -18,6 +18,6 @@ public class Admin {
     public int tallyVote(){
         String[] candidates = {"Darth Vader", "Chewbacca", "Anakin Skywalker", "Luke Skywalker", "Yoda", "Darth Maul", "Mace Windu", "Jar-Jar Binks", "C3PO"};
         System.out.println(candidates[0]);
-        return 3;
+        return 0;
     }
 }
