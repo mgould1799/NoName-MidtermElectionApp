@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d03abb6c-c437-4b79-a5f0-e3b94b392998" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/view/AdminLoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/view/adminLogin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/view/LoginPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/view/LoginPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/view/VotingAreaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/view/VotingAreaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/edu/voting/attempt/LoginPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/edu/voting/attempt/SignUpController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/edu/voting/attempt/SubmitController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/edu/voting/attempt/SuccessRegController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/edu/voting/attempt/VotingAreaController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/edu/voting/attempt/login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/edu/voting/attempt/loginPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/edu/voting/attempt/signUp.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/edu/voting/attempt/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/edu/voting/attempt/successReg.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/edu/voting/attempt/successSubmit.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/edu/voting/attempt/votingArea.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/edu/voting/attempt/white-palmetto-moon-md.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/csci360/electionapp/model/Voter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/model/Voter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/csci360/electionapp/view/LoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/view/LoginPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/csci360/electionapp/view/VotingAreaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/view/VotingAreaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voters.csv" beforeDir="false" afterPath="$PROJECT_DIR$/voters.csv" afterDir="false" />
-    </list>
+    <list default="true" id="d03abb6c-c437-4b79-a5f0-e3b94b392998" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -155,8 +131,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/AdminLoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-49">
-              <caret line="84" column="38" lean-forward="true" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+            <state relative-caret-position="189">
+              <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -304,7 +280,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541542271412" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541542475965" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -372,18 +348,17 @@
       <workItem from="1541105177680" duration="1526000" />
       <workItem from="1541375690592" duration="951000" />
       <workItem from="1541535522117" duration="243000" />
-      <workItem from="1541535797549" duration="6458000" />
+      <workItem from="1541535797549" duration="6662000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24440000" />
+    <option name="totallyTimeSpent" value="24644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18578136" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18578136" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -392,7 +367,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17821783" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17821783" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -568,8 +543,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/AdminLoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="84" column="38" lean-forward="true" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+        <state relative-caret-position="189">
+          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
