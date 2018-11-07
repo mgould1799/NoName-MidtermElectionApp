@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
@@ -29,10 +30,22 @@
          <font>
             <Font name="Felix Titling" size="24.0" />
          </font></Label>
-      <TextField fx:id="usernameField" layoutX="217.0" layoutY="160.0" promptText="Username" />
-      <TextField fx:id="passwordField" layoutX="217.0" layoutY="187.0" promptText="Password" />
-      <Button fx:id="logInButton" layoutX="217.0" layoutY="217.0" mnemonicParsing="false" onAction="#pressLogin" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: BF0A30;" text="Log In" textFill="WHITE" />
-      <Button fx:id="regButton" layoutX="306.0" layoutY="217.0" mnemonicParsing="false" onAction="#pressReg" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: BF0A30;" text="Register" textFill="WHITE" />
+      <TextField fx:id="usernameField" layoutX="217.0" layoutY="160.0" promptText="Username">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="passwordField" layoutX="217.0" layoutY="187.0" promptText="Password">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Button fx:id="logInButton" layoutX="217.0" layoutY="217.0" mnemonicParsing="false" onAction="#pressLogin" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: BF0A30;" text="Log In" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="regButton" layoutX="306.0" layoutY="217.0" mnemonicParsing="false" onAction="#pressReg" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: BF0A30;" text="Register" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <Label alignment="CENTER" layoutX="469.0" layoutY="359.0" prefHeight="27.0" prefWidth="117.0" text="FoF Systems" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
          <font>
             <Font size="15.0" />
