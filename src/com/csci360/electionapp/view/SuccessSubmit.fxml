@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
@@ -15,7 +16,10 @@
       <Button fx:id="done" layoutX="484.0" layoutY="419.0" mnemonicParsing="false" onAction="#pressDone" prefHeight="41.0" prefWidth="85.0" style="-fx-background-color: BF0A30;" text="Done" textFill="WHITE">
          <font>
             <Font size="20.0" />
-         </font></Button>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <Label layoutX="57.0" layoutY="215.0" prefHeight="44.0" prefWidth="498.0" text="You have successfully voted." textFill="WHITE">
          <font>
             <Font size="36.0" />
