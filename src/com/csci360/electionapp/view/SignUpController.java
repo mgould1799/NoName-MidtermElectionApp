@@ -36,6 +36,11 @@ public class SignUpController {
     private Label change;
 
 
+    /**
+     * if a user presses cancel, it takes them back to the log in screen.
+     * @param event
+     * @throws Exception
+     */
     public void pressCancel(ActionEvent event) throws Exception {
         try{
             cancel.getScene().getWindow().hide();
@@ -49,6 +54,12 @@ public class SignUpController {
         }
     }
 
+    /**
+     * voter enters all of there information to register. if a username is not taken, they move onto the succesfully
+     *      registered screen.
+     * @param event
+     * @throws Exception
+     */
     public void pressRegister(ActionEvent event) throws Exception {
         Voter newVoter=new Voter(firstName.getText(),lastName.getText(),dateOfBirth.getText(),address.getText(),socialSecurityNumber.getText(),userName.getText(),password.getText());
         if(!newVoter.isUserNameTaken(newVoter)) {

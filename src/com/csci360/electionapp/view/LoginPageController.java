@@ -36,7 +36,11 @@ public class LoginPageController  {
     String adminPW = "admin";
 
 
-
+    /**
+     * takes the user to the registration page
+     * @param event
+     * @throws Exception
+     */
     public void pressReg(ActionEvent event) throws Exception {
         try {
             regButton.getScene().getWindow().hide();
@@ -49,6 +53,14 @@ public class LoginPageController  {
             e.printStackTrace();
         }
     }
+
+    /**
+     * if the user logs in with admin, they will be taken to the admin page.
+     * if a user enters any login information that ins't admin, they will be taken to the voting ballot
+     *  if they give a correct username and password.
+     * @param event
+     * @throws Exception
+     */
     @FXML
     public void pressLogin(ActionEvent event) throws Exception {
         if (usernameField.getText().equalsIgnoreCase(adminUserName) && passwordField.getText().equalsIgnoreCase(adminPW))

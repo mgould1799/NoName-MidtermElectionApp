@@ -9,6 +9,9 @@ import javafx.stage.Stage;
 
 public class SuccessRegController {
 
+    /**
+     * returns the user to the log in page
+     */
     @FXML
     private javafx.scene.control.Button returnLogIn;
     public void pressLogIn(ActionEvent event) throws Exception {

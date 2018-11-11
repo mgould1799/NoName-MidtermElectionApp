@@ -9,6 +9,11 @@ import javafx.stage.Stage;
 
 public class MainLogin extends Application {
 
+    /**
+     * starts the voting app
+     * @param primaryStage
+     * @throws Exception
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("view/loginPage.fxml"));

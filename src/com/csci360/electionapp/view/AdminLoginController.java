@@ -56,9 +56,21 @@ public class AdminLoginController {
     private Label c3p0;
     private Admin admin = new Admin();
 
+    /**
+     * prints the votes when button is pushed
+     * @param event
+     * @throws Exception
+     */
+
     public void pressPrintVotes(ActionEvent event) throws Exception{
         admin.print();
     }
+
+    /**
+     * returns to the home screen
+     * @param event
+     * @throws Exception
+     */
     public void pressAdminReturn(ActionEvent event) throws Exception {
         try {
             adminReturnButton.getScene().getWindow().hide();
@@ -71,6 +83,13 @@ public class AdminLoginController {
             e.printStackTrace();
         }
     }
+
+    /**
+     * when the press tally buttoned is pressed. the votes are tallyed and displayed to the screen.
+     * need to put same code from admin class, so we can change the labels within on the fxml page
+     * @param event
+     * @throws Exception
+     */
     public void pressTallyVotes(ActionEvent event) throws Exception {
         try {
             String[] candidates = {"Darth Vader", "Chewbacca", "Anakin Skywalker", "Luke Skywalker", "Yoda", "Darth Maul", "Mace Windu", "Jar-Jar Binks", "C3PO"};
@@ -131,7 +150,7 @@ public class AdminLoginController {
                 mw.setText(Integer.toString(maceCnt));
                 jjb.setText(Integer.toString(jarCnt));
                 c3p0.setText(Integer.toString(c3p0Cnt));
-                System.out.println("Total Votes" + "\n" +
+                /*System.out.println("Total Votes" + "\n" +
                         "Darth Vader = " + darthCnt + "\n" +
                         "Chewbacca = " + chewbaccaCnt + "\n" +
                         "Anakin Skywalker = " + chewbaccaCnt + "\n" +
@@ -141,7 +160,7 @@ public class AdminLoginController {
                         "Mace Windu = " + maceCnt + "\n" +
                         "Jar-Jar Binks = " + jarCnt + "\n" +
                         "C3P0 = " + c3p0Cnt + "\n");
-
+                */
             }
             catch(Exception e){
                 System.out.println("Error while reading csv");

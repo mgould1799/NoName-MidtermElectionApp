@@ -37,6 +37,9 @@ public class VotingAreaController {
     // Buttons
     @FXML private javafx.scene.control.Button submit;
 
+    /**
+     * sets the drop down box candidates
+     */
 
     public void initialize(){
         mayorBox.setItems(mayors);
@@ -44,14 +47,17 @@ public class VotingAreaController {
         councilBox.setItems(council);
     }
 
+    /**
+     * adds the voters votes to the csv file once the submit button is clicked
+     * @param event
+     * @throws Exception
+     */
     public void pressSubmit(ActionEvent event) throws Exception {
         try{
             submit.getScene().getWindow().hide();
             String COMMA_DELIMITER = ",";
 
             String NEW_LINE_SEPARATOR = "\n";
-
-            String FILE_HEADER = "firstName,lastName,dateOfBirth,socialSecurityNumber,address,userName,password";
 
             FileWriter fileWriter=null;
             try{

@@ -14,6 +14,9 @@ public class Voter {
     private String userName;
     private String password;
 
+    /**
+     * default constructor
+     */
     public Voter(){
 
     }
@@ -198,6 +201,12 @@ public class Voter {
 
     //com.csci360.electionapp.model.storeVoter followed this tutorial to store the voters in the csv file
 
+    /**
+     * verifies if a username is within the csv file, so a user can login. returns true is so; false otherwise
+     * @param givenUserName
+     * @return
+     */
+
     public boolean verifyUserName(String givenUserName){
         BufferedReader fileReader=null;
         //try to read the file. if it fails, the catch prints the stack trace
@@ -235,6 +244,13 @@ public class Voter {
 
 
     }
+
+    /**
+     * checks to see if a password is the correct one stated in the csv.
+     * returns true if there. returns false otherwise.
+     * @param givenPassword
+     * @return
+     */
 
     public boolean verifyPassword(String givenPassword){
         BufferedReader fileReader=null;
