@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import com.csci360.electionapp.model.Voter;
@@ -27,6 +28,32 @@ public class AdminLoginController {
     @FXML
     private javafx.scene.control.Button printVotes;
 
+    @FXML
+    private Label dv;
+
+    @FXML
+    private Label chew;
+
+    @FXML
+    private Label anakin;
+
+    @FXML
+    private Label luke;
+
+    @FXML
+    private Label yoda;
+
+    @FXML
+    private Label dm;
+
+    @FXML
+    private Label mw;
+
+    @FXML
+    private Label jjb;
+
+    @FXML
+    private Label c3p0;
     private Admin admin = new Admin();
 
     public void pressPrintVotes(ActionEvent event) throws Exception{
@@ -95,13 +122,22 @@ public class AdminLoginController {
                     }
 
                 }
+                dv.setText(Integer.toString(darthCnt));
+                chew.setText(Integer.toString(chewbaccaCnt));
+                anakin.setText(Integer.toString(anakinCnt));
+                luke.setText(Integer.toString(lukeCnt));
+                yoda.setText(Integer.toString(yodaCnt));
+                dm.setText(Integer.toString(maulCnt));
+                mw.setText(Integer.toString(maceCnt));
+                jjb.setText(Integer.toString(jarCnt));
+                c3p0.setText(Integer.toString(c3p0Cnt));
                 System.out.println("Total Votes" + "\n" +
                         "Darth Vader = " + darthCnt + "\n" +
                         "Chewbacca = " + chewbaccaCnt + "\n" +
                         "Anakin Skywalker = " + chewbaccaCnt + "\n" +
                         "Luke Skywalker = " + lukeCnt + "\n" +
                         "Yoda = " + yodaCnt + "\n" +
-                        "Darth Maul = " + darthCnt + "\n" +
+                        "Darth Maul = " + maulCnt + "\n" +
                         "Mace Windu = " + maceCnt + "\n" +
                         "Jar-Jar Binks = " + jarCnt + "\n" +
                         "C3P0 = " + c3p0Cnt + "\n");
