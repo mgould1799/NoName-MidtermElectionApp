@@ -16,6 +16,7 @@ import com.csci360.electionapp.model.Voter;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import com.csci360.electionapp.model.Admin;
 
 public class AdminLoginController {
     // Buttons
@@ -24,6 +25,13 @@ public class AdminLoginController {
     @FXML
     private javafx.scene.control.Button adminTallyVotes;
     @FXML
+    private javafx.scene.control.Button printVotes;
+
+    private Admin admin = new Admin();
+
+    public void pressPrintVotes(ActionEvent event) throws Exception{
+        admin.print();
+    }
     public void pressAdminReturn(ActionEvent event) throws Exception {
         try {
             adminReturnButton.getScene().getWindow().hide();

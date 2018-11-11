@@ -4,13 +4,14 @@
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csci360.electionapp.view.AdminLoginController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csci360.electionapp.view.AdminLoginController">
    <children>
       <ButtonBar layoutX="375.0" layoutY="346.0" prefHeight="40.0" prefWidth="200.0">
         <buttons>
-            <Button fx:id="adminTallyVotes" mnemonicParsing="false" onAction="#pressTallyVotes" text="Tally Votes" />
           <Button fx:id="adminReturnButton" mnemonicParsing="false" onAction="#pressAdminReturn" text="Return" />
         </buttons>
       </ButtonBar>
+      <Button fx:id="adminTallyVotes" layoutX="160.0" layoutY="161.0" mnemonicParsing="false" onAction="#pressTallyVotes" prefHeight="50.0" prefWidth="140.0" text="Tally Votes" />
+      <Button fx:id="printVotes" layoutX="300.0" layoutY="161.0" mnemonicParsing="false" onAction="#pressPrintVotes" prefHeight="50.0" prefWidth="140.0" text="Print Votes" />
    </children>
 </AnchorPane>
