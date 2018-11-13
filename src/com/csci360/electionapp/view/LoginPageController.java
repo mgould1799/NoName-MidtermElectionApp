@@ -18,6 +18,8 @@ public class LoginPageController  {
     // Buttons
     @FXML private javafx.scene.control.Button regButton;
 
+
+
     //ChoiceBox
     @FXML
     private ChoiceBox<String> repBox;

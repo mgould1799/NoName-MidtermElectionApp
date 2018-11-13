@@ -1,5 +1,6 @@
 package com.csci360.electionapp.view;
 
+import com.csci360.electionapp.model.Voter;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -52,6 +53,10 @@ public class VotingAreaController {
      * @param event
      * @throws Exception
      */
+
+    Voter tempVoter = new Voter();
+
+
     public void pressSubmit(ActionEvent event) throws Exception {
         try{
             submit.getScene().getWindow().hide();

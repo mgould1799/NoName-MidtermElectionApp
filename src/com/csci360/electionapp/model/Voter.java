@@ -13,6 +13,7 @@ public class Voter {
     private String address;
     private String userName;
     private String password;
+    private boolean hasVoted;
 
     /**
      * default constructor
@@ -38,6 +39,7 @@ public class Voter {
         this.setAddress(address);
         this.setUserName(userName);
         this.setPassword(password);
+        this.hasVoted = false;
     }
 
     /**
