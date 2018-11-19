@@ -47,30 +47,37 @@ public class Voter {
      * Setter and getter methods below for each attribute of a voter
      */
     public String getFirstName() {
+
         return firstName;
     }
 
     public void setFirstName(String firstName) {
+
         this.firstName = firstName;
     }
 
     public String getLastName() {
+
         return lastName;
     }
 
     public void setLastName(String lastName) {
+
         this.lastName = lastName;
     }
 
     public String getDateOfBirth() {
+
         return dateOfBirth;
     }
 
     public void setDateOfBirth(String dateOfBirth) {
+
         this.dateOfBirth = dateOfBirth;
     }
 
     public String getSocialSecurityNumber() {
+
         return socialSecurityNumber;
     }
 
@@ -79,26 +86,32 @@ public class Voter {
     }
 
     public String getAddress() {
+
         return address;
     }
 
     public void setAddress(String address) {
+
         this.address = address;
     }
 
     public String getUserName() {
+
         return userName;
     }
 
     public void setUserName(String userName) {
+
         this.userName = userName;
     }
 
     public String getPassword() {
+
         return password;
     }
 
     public void setPassword(String password) {
+
         this.password = password;
     }
 
@@ -111,7 +124,7 @@ public class Voter {
      * Stores a voter in the csv
      * @param v
      */
-    public void storeVoter(Voter v) {
+    public void storeVoter(Voter voter) {
 
         String COMMA_DELIMITER = ",";
 
@@ -122,19 +135,22 @@ public class Voter {
         FileWriter fileWriter=null;
         try{
             fileWriter = new FileWriter("voters.csv",true);
-            fileWriter.append(v.firstName);
+            fileWriter.append(voter.firstName);
             fileWriter.append(COMMA_DELIMITER);
-            fileWriter.append(v.lastName);
+            fileWriter.append(voter.lastName);
             fileWriter.append(COMMA_DELIMITER);
-            fileWriter.append(v.dateOfBirth);
+            fileWriter.append(voter.dateOfBirth);
             fileWriter.append(COMMA_DELIMITER);
-            fileWriter.append(v.socialSecurityNumber);
+            fileWriter.append(voter.socialSecurityNumber);
             fileWriter.append(COMMA_DELIMITER);
-            fileWriter.append(v.address);
+            fileWriter.append(voter.address);
             fileWriter.append(COMMA_DELIMITER);
-            fileWriter.append(v.userName);
+            fileWriter.append(voter.userName);
             fileWriter.append(COMMA_DELIMITER);
-            fileWriter.append(v.password);
+            String salt= Hash.getSalt();
+            Hash.storeSalt(salt,voter);
+            System.out.println("here is the salt for the voter " + salt);
+            fileWriter.append(Hash.get_SHA_512_SecurePassword(voter.password, salt));
             fileWriter.append(NEW_LINE_SEPARATOR);
 
 
@@ -163,7 +179,7 @@ public class Voter {
      * @param v
      * @return
      */
-    public boolean isUserNameTaken(Voter v){
+    public static boolean isUserNameTaken(Voter voter){
         BufferedReader fileReader=null;
         //try to read the file. if it fails, the catch prints the stack trace
         try{
@@ -176,7 +192,7 @@ public class Voter {
                         //creates a tempory voter
                         Voter tempVoter=new Voter(tokens[0],tokens[1],tokens[2],tokens[3],tokens[4],tokens[5],tokens[6]);
                         //if the userName exists it returns true
-                        if(tempVoter.userName.equals(v.userName))
+                        if(tempVoter.userName.equals(voter.userName))
                             return true;
                     }
 
@@ -201,7 +217,6 @@ public class Voter {
 
     }
 
-    //com.csci360.electionapp.model.storeVoter followed this tutorial to store the voters in the csv file
 
     /**
      * verifies if a username is within the csv file, so a user can login. returns true is so; false otherwise
@@ -209,7 +224,7 @@ public class Voter {
      * @return
      */
 
-    public boolean verifyUserName(String givenUserName){
+    public static boolean verifyUserName(String givenUserName){
         BufferedReader fileReader=null;
         //try to read the file. if it fails, the catch prints the stack trace
         try{
@@ -254,7 +269,7 @@ public class Voter {
      * @return
      */
 
-    public boolean verifyPassword(String givenPassword){
+    public static boolean verifyPassword(String givenPassword){
         BufferedReader fileReader=null;
         //try to read the file. if it fails, the catch prints the stack trace
         try{
@@ -266,8 +281,9 @@ public class Voter {
                 if(tokens.length>0) {
                     //creates a tempory voter
                     Voter tempVoter=new Voter(tokens[0],tokens[1],tokens[2],tokens[3],tokens[4],tokens[5],tokens[6]);
-                    //if the userName exists it returns true
-                    if(givenPassword.equals(tempVoter.password))
+                    //if the password is correct it returns true
+                    String salt=Hash.getSaltFromFile(tempVoter);
+                    if(Hash.get_SHA_512_SecurePassword(givenPassword, salt).equals(tempVoter.password))
                         return true;
                 }
 
@@ -292,6 +308,8 @@ public class Voter {
 
     }
     //
+
+
 
 
 
