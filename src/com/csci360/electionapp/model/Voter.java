@@ -147,7 +147,7 @@ public class Voter {
             fileWriter.append(COMMA_DELIMITER);
             fileWriter.append(voter.userName);
             fileWriter.append(COMMA_DELIMITER);
-            String salt= Hash.getSalt();
+            byte[] salt= Hash.getSalt();
             Hash.storeSalt(salt,voter);
             System.out.println("here is the salt for the voter " + salt);
             fileWriter.append(Hash.get_SHA_512_SecurePassword(voter.password, salt));
@@ -282,7 +282,7 @@ public class Voter {
                     //creates a tempory voter
                     Voter tempVoter=new Voter(tokens[0],tokens[1],tokens[2],tokens[3],tokens[4],tokens[5],tokens[6]);
                     //if the password is correct it returns true
-                    String salt=Hash.getSaltFromFile(tempVoter);
+                    byte[] salt=Hash.getSaltFromFile(tempVoter);
                     if(Hash.get_SHA_512_SecurePassword(givenPassword, salt).equals(tempVoter.password))
                         return true;
                 }

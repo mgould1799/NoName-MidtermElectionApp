@@ -21,13 +21,12 @@ public class Hash {
      * @param salt
      * @return
      */
-    public static String get_SHA_512_SecurePassword(String passwordToHash, String salt)
+    public static String get_SHA_512_SecurePassword(String passwordToHash, byte[] salt)
     {
         String generatedPassword = null;
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-512");
-            System.out.println("Hashing and here is the salt "+salt.getBytes());
-            md.update(salt.getBytes());
+            md.update(salt);
             byte[] bytes = md.digest(passwordToHash.getBytes());
             StringBuilder sb = new StringBuilder();
             for(int i=0; i< bytes.length ;i++)
@@ -49,14 +48,13 @@ public class Hash {
      * @return
      * @throws NoSuchAlgorithmException
      */
-    public static String getSalt() throws NoSuchAlgorithmException
+    public static byte[] getSalt() throws NoSuchAlgorithmException
     {
         SecureRandom sr = SecureRandom.getInstance("SHA1PRNG");
         byte[] salt = new byte[16];
         sr.nextBytes(salt);
 
-        String stringSalt=new String(salt);
-        return stringSalt;
+        return salt;
     }
 
     /**
@@ -64,7 +62,7 @@ public class Hash {
      * @param salt
      * @param voter
      */
-    public static void storeSalt(String salt,Voter voter){
+    public static void storeSalt(byte[] salt,Voter voter){
         String COMMA_DELIMITER = ",";
 
         String NEW_LINE_SEPARATOR = "\n";
@@ -75,7 +73,7 @@ public class Hash {
             fileWriter.append(voter.getUserName());
             fileWriter.append(COMMA_DELIMITER);
             System.out.println("Storing the salt. Here is the salt: "+salt);
-            fileWriter.append(salt);
+            fileWriter.append(byteToString(salt));
             fileWriter.append(NEW_LINE_SEPARATOR);
             System.out.println("The salt was added to the file");
         }
@@ -99,8 +97,8 @@ public class Hash {
      * @param voter
      * @return
      */
-    public static String getSaltFromFile(Voter voter){
-        String salt =null;
+    public static byte[] getSaltFromFile(Voter voter){
+        byte[] salt =null;
 
         BufferedReader fileReader=null;
         try{
@@ -110,7 +108,7 @@ public class Hash {
                 String[] tokens=line.split(",");
                 if(tokens.length>0){
                     if(tokens[0].equals(voter.getUserName())){
-                        salt=tokens[1];
+                        salt=stringToByte(tokens[1]);
                        System.out.println("Here is the stored salt in the file "+ salt);
                         return salt;
                     }
@@ -131,12 +129,22 @@ public class Hash {
         return salt;
     }
 
+    public static byte[] stringToByte(String salt){
+        byte[] decodedSalt=Base64.getDecoder().decode(salt);
+        return decodedSalt;
+    }
+    public static String byteToString(byte[] salt){
+        String encodedSalt=Base64.getEncoder().encodeToString(salt);
+        return encodedSalt;
+    }
+
+
 
 
     public static void main(String[] args){
         Voter v=new Voter("Blup","kjj","ljlj","ljlj","ljjlj","blurp5","password");
 
-        try {
+        /*try {
             String salt = getSalt();
             storeSalt(salt, v);
             System.out.println(salt);
@@ -144,7 +152,7 @@ public class Hash {
         }
         catch(Exception e){
             System.out.println(e);
-        }
+        }*/
 
     }
 
