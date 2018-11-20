@@ -158,8 +158,6 @@ public class Hash {
             String saltString=byteToString(salt);
             System.out.println(saltString);
             System.out.println(stringToByte(saltString));
-            String random = (String) salt;
-            System.out.println(random)
         }
         catch(Exception e){
             System.out.println(e);

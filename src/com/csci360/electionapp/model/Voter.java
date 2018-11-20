@@ -13,7 +13,6 @@ public class Voter {
     private String address;
     private String userName;
     private String password;
-    private boolean hasVoted;
 
     /**
      * default constructor
@@ -39,7 +38,6 @@ public class Voter {
         this.setAddress(address);
         this.setUserName(userName);
         this.setPassword(password);
-        this.hasVoted = false;
     }
 
     /**
@@ -47,37 +45,30 @@ public class Voter {
      * Setter and getter methods below for each attribute of a voter
      */
     public String getFirstName() {
-
         return firstName;
     }
 
     public void setFirstName(String firstName) {
-
         this.firstName = firstName;
     }
 
     public String getLastName() {
-
         return lastName;
     }
 
     public void setLastName(String lastName) {
-
         this.lastName = lastName;
     }
 
     public String getDateOfBirth() {
-
         return dateOfBirth;
     }
 
     public void setDateOfBirth(String dateOfBirth) {
-
         this.dateOfBirth = dateOfBirth;
     }
 
     public String getSocialSecurityNumber() {
-
         return socialSecurityNumber;
     }
 
@@ -86,32 +77,26 @@ public class Voter {
     }
 
     public String getAddress() {
-
         return address;
     }
 
     public void setAddress(String address) {
-
         this.address = address;
     }
 
     public String getUserName() {
-
         return userName;
     }
 
     public void setUserName(String userName) {
-
         this.userName = userName;
     }
 
     public String getPassword() {
-
-        return password;
+        return this.password;
     }
 
     public void setPassword(String password) {
-
         this.password = password;
     }
 
@@ -147,10 +132,8 @@ public class Voter {
             fileWriter.append(COMMA_DELIMITER);
             fileWriter.append(voter.userName);
             fileWriter.append(COMMA_DELIMITER);
-            byte[] salt= Hash.getSalt();
-            Hash.storeSalt(salt,voter);
-            System.out.println("here is the salt for the voter " + salt);
-            fileWriter.append(Hash.get_SHA_512_SecurePassword(voter.password, salt));
+            String hash= BCrypt.hashpw(voter.password,BCrypt.gensalt());
+            fileWriter.append(hash);
             fileWriter.append(NEW_LINE_SEPARATOR);
 
 
@@ -179,24 +162,24 @@ public class Voter {
      * @param v
      * @return
      */
-    public static boolean isUserNameTaken(Voter voter){
+    public boolean isUserNameTaken(Voter voter){
         BufferedReader fileReader=null;
         //try to read the file. if it fails, the catch prints the stack trace
         try{
             fileReader=new BufferedReader(new FileReader("voters.csv"));
             String line="";
-                while ((line = fileReader.readLine()) != null) {
-                    //get all tokens available in a line by splitting it by the commas
-                    String[] tokens = line.split(",");
-                    if(tokens.length>0) {
-                        //creates a tempory voter
-                        Voter tempVoter=new Voter(tokens[0],tokens[1],tokens[2],tokens[3],tokens[4],tokens[5],tokens[6]);
-                        //if the userName exists it returns true
-                        if(tempVoter.userName.equals(voter.userName))
-                            return true;
-                    }
-
+            while ((line = fileReader.readLine()) != null) {
+                //get all tokens available in a line by splitting it by the commas
+                String[] tokens = line.split(",");
+                if(tokens.length>0) {
+                    //creates a tempory voter
+                    Voter tempVoter=new Voter(tokens[0],tokens[1],tokens[2],tokens[3],tokens[4],tokens[5],tokens[6]);
+                    //if the userName exists it returns true
+                    if(tempVoter.userName.equals(voter.userName))
+                        return true;
                 }
+
+            }
 
         }
         catch(Exception e){
@@ -217,6 +200,7 @@ public class Voter {
 
     }
 
+    //com.csci360.electionapp.model.storeVoter followed this tutorial to store the voters in the csv file
 
     /**
      * verifies if a username is within the csv file, so a user can login. returns true is so; false otherwise
@@ -224,7 +208,7 @@ public class Voter {
      * @return
      */
 
-    public static boolean verifyUserName(String givenUserName){
+    public boolean verifyUserName(String givenUserName){
         BufferedReader fileReader=null;
         //try to read the file. if it fails, the catch prints the stack trace
         try{
@@ -269,22 +253,23 @@ public class Voter {
      * @return
      */
 
-    public static boolean verifyPassword(String givenPassword){
+    public boolean verifyPassword(String givenPassword){
         BufferedReader fileReader=null;
         //try to read the file. if it fails, the catch prints the stack trace
+        boolean isRight=false;
         try{
             fileReader=new BufferedReader(new FileReader("voters.csv"));
             String line="";
+            fileReader.readLine();
             while ((line = fileReader.readLine()) != null) {
                 //get all tokens available in a line by splitting it by the commas
                 String[] tokens = line.split(",");
                 if(tokens.length>0) {
                     //creates a tempory voter
                     Voter tempVoter=new Voter(tokens[0],tokens[1],tokens[2],tokens[3],tokens[4],tokens[5],tokens[6]);
-                    //if the password is correct it returns true
-                    byte[] salt=Hash.getSaltFromFile(tempVoter);
-                    if(Hash.get_SHA_512_SecurePassword(givenPassword, salt).equals(tempVoter.password))
-                        return true;
+                    //if the userName exists it returns true
+                    if(BCrypt.checkpw(givenPassword,tempVoter.password));
+                    isRight=true;
                 }
 
             }
@@ -303,13 +288,11 @@ public class Voter {
                 System.out.println("error while closing file reader");
             }
         }
-        return false;
+        return isRight;
 
 
     }
     //
-
-
 
 
 
