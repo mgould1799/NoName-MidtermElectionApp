@@ -37,6 +37,7 @@ public class Hash {
         }
         catch (NoSuchAlgorithmException e)
         {
+            System.out.println("inside of no such algorithm execption");
             e.printStackTrace();
         }
         return generatedPassword;
@@ -73,6 +74,8 @@ public class Hash {
             fileWriter.append(voter.getUserName());
             fileWriter.append(COMMA_DELIMITER);
             System.out.println("Storing the salt. Here is the salt: "+salt);
+            System.out.println("Here is the salt in string format"+byteToString(salt));
+            System.out.println("here is the salt after going through algorithm "+stringToByte(byteToString(salt)));
             fileWriter.append(byteToString(salt));
             fileWriter.append(NEW_LINE_SEPARATOR);
             System.out.println("The salt was added to the file");
@@ -109,7 +112,7 @@ public class Hash {
                 if(tokens.length>0){
                     if(tokens[0].equals(voter.getUserName())){
                         salt=stringToByte(tokens[1]);
-                       System.out.println("Here is the stored salt in the file "+ salt);
+                        System.out.println("Here is the stored salt in the file "+ salt);
                         return salt;
                     }
                 }
@@ -144,17 +147,26 @@ public class Hash {
     public static void main(String[] args){
         Voter v=new Voter("Blup","kjj","ljlj","ljlj","ljjlj","blurp5","password");
 
-        /*try {
-            String salt = getSalt();
+        try {
+            byte[] salt = getSalt();
             storeSalt(salt, v);
             System.out.println(salt);
             System.out.println(getSaltFromFile(v));
+
+            System.out.println(" just printing out the salt below");
+            System.out.println(salt);
+            String saltString=byteToString(salt);
+            System.out.println(saltString);
+            System.out.println(stringToByte(saltString));
+            String random = (String) salt;
+            System.out.println(random)
         }
         catch(Exception e){
             System.out.println(e);
-        }*/
+        }
 
     }
 
 
 }
+

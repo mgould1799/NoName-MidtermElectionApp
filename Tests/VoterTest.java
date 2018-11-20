@@ -1,7 +1,6 @@
-package com.csci360.electionapp.model;
-
 import static org.junit.Assert.*;
 
+import com.csci360.electionapp.model.Voter;
 import org.junit.Before;
 import org.junit.Test;
 

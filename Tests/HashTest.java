@@ -1,5 +1,3 @@
-package com.csci360.electionapp.model;
-
 import static org.junit.Assert.*;
 
 import org.junit.Before;
