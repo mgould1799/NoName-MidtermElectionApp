@@ -54,7 +54,7 @@ public class AdminLoginController {
 
     @FXML
     private Label c3p0;
-    private Admin admin = new Admin();
+
 
     /**
      * prints the votes when button is pushed
@@ -63,7 +63,7 @@ public class AdminLoginController {
      */
 
     public void pressPrintVotes(ActionEvent event) throws Exception{
-        admin.print();
+        Admin.print();
     }
 
     /**

@@ -3,13 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d03abb6c-c437-4b79-a5f0-e3b94b392998" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/castedVotes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/castedVotes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/model/Admin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/model/Voter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/model/Voter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/view/LoginPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/view/LoginPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/view/SignUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/view/SignUpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/csci360/electionapp/model/Hash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/model/Hash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/csci360/electionapp/model/Voter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/model/Voter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voters.csv" beforeDir="false" afterPath="$PROJECT_DIR$/voters.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/csci360/electionapp/view/AdminLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/view/AdminLoginController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,27 +81,27 @@
     <session id="1410924947">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="4" />
           <entry key="project.open.time.13" value="3" />
-          <entry key="project.open.time.14" value="3" />
-          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.14" value="4" />
+          <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.2" value="4" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="1" />
           <entry key="fxml" value="8" />
-          <entry key="java" value="34" />
+          <entry key="java" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="34" />
+          <entry key="JAVA" value="37" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="8" />
         </counts>
@@ -112,13 +110,13 @@
         <counts>
           <entry key="csv" value="188" />
           <entry key="fxml" value="13" />
-          <entry key="java" value="7767" />
+          <entry key="java" value="7897" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="188" />
-          <entry key="JAVA" value="7767" />
+          <entry key="JAVA" value="7897" />
           <entry key="XML" value="13" />
         </counts>
       </usages-collector>
@@ -155,46 +153,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/BCrypt.java">
+        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/voters.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="77" selection-start-column="77" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/VotingAreaController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="59" column="65" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Voter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1515">
-              <caret line="127" column="47" lean-forward="true" selection-start-line="127" selection-start-column="47" selection-end-line="127" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Hash.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2385">
-              <caret line="159" column="57" selection-start-line="159" selection-start-column="57" selection-end-line="159" selection-end-column="57" />
+            <state relative-caret-position="97">
+              <caret line="120" column="18" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,10 +165,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/LoginPageController.java">
+        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/AdminLoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="85" column="62" selection-start-line="85" selection-start-column="62" selection-end-line="85" selection-end-column="62" />
+            <state relative-caret-position="-541">
+              <caret line="26" column="55" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Hash.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2190">
+              <caret line="146" column="4" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -236,8 +210,6 @@
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/Register.java" />
         <option value="$PROJECT_DIR$/castedVotes.csv" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/view/adminLogin.fxml" />
-        <option value="$PROJECT_DIR$/src/com/csci360/electionapp/view/AdminLoginController.java" />
-        <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/view/SignUpController.java" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/view/SuccessRegController.java" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/MainLogin.java" />
@@ -245,9 +217,11 @@
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/view/VotingAreaController.java" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/view/LoginPageController.java" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/BCrypt.java" />
-        <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/Hash.java" />
         <option value="$PROJECT_DIR$/voters.csv" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/Voter.java" />
+        <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java" />
+        <option value="$PROJECT_DIR$/src/com/csci360/electionapp/view/AdminLoginController.java" />
+        <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/Hash.java" />
       </list>
     </option>
   </component>
@@ -274,6 +248,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,7 +290,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -324,7 +298,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542733847992" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542768298347" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -425,17 +399,19 @@
       <workItem from="1542732029800" duration="281000" />
       <workItem from="1542732768590" duration="1062000" />
       <workItem from="1542750204029" duration="253000" />
+      <workItem from="1542765581400" duration="1541000" />
+      <workItem from="1542768400371" duration="136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33866000" />
+    <option name="totallyTimeSpent" value="35543000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16309012" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16738197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -444,7 +420,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45859873" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.45859873" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -452,7 +428,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" visible="true" weight="0.19490446" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32738853" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -540,8 +516,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/castedVotes.csv">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/SuccessRegController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -561,27 +537,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/AdminLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/VoterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -613,20 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/MainLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/BCrypt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/LoginPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1125">
@@ -634,13 +579,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/voters.csv">
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Voter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="77" selection-start-column="77" selection-end-column="77" />
+        <state relative-caret-position="708">
+          <caret line="127" column="47" selection-start-line="127" selection-start-column="47" selection-end-line="127" selection-end-column="47" />
         </state>
       </provider>
-      <provider editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/VotingAreaController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -649,17 +593,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Voter.java">
+    <entry file="file://$PROJECT_DIR$/voters.csv">
+      <provider editor-type-id="csv-text-editor" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1515">
-          <caret line="127" column="47" lean-forward="true" selection-start-line="127" selection-start-column="47" selection-end-line="127" selection-end-column="47" />
+        <state>
+          <caret column="77" selection-start-column="77" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/BCrypt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10317">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/MainLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="120" column="18" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/AdminLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-541">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Hash.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2385">
-          <caret line="159" column="57" selection-start-line="159" selection-start-column="57" selection-end-line="159" selection-end-column="57" />
+        <state relative-caret-position="2190">
+          <caret line="146" column="4" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

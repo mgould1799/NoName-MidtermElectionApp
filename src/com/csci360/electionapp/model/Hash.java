@@ -144,26 +144,7 @@ public class Hash {
 
 
 
-    public static void main(String[] args){
-        Voter v=new Voter("Blup","kjj","ljlj","ljlj","ljjlj","blurp5","password");
-
-        try {
-            byte[] salt = getSalt();
-            storeSalt(salt, v);
-            System.out.println(salt);
-            System.out.println(getSaltFromFile(v));
-
-            System.out.println(" just printing out the salt below");
-            System.out.println(salt);
-            String saltString=byteToString(salt);
-            System.out.println(saltString);
-            System.out.println(stringToByte(saltString));
-        }
-        catch(Exception e){
-            System.out.println(e);
-        }
-
-    }
+    
 
 
 }

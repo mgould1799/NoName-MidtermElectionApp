@@ -6,6 +6,13 @@ import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
+
+import java.io.*;
+import javax.print.*;
+import javax.print.attribute.*;
+import javax.print.attribute.standard.*;
+import javax.print.event.*;
 
 public class Admin {
 
@@ -104,18 +111,59 @@ public class Admin {
         }
     }
 
+    /*
+
+     */
+
     /**
      * prints the votes
      */
-    public void print(){
-        try {
-            JEditorPane text = new JEditorPane("castedVotes.csv");
+    public static void print(){
+       /* try {
+            String urlSite="castedVotes.csv";
+            URL site= new URL(urlSite);
+            JEditorPane text = new JEditorPane(site);
             PrintService service = PrintServiceLookup.lookupDefaultPrintService();
             text.print(null, null, false, service, null, false);
             System.out.println("the file has been printed");
         }
         catch(Exception e){
             System.out.println(e);
+        }*/
+        DocFlavor flavor = DocFlavor.INPUT_STREAM.POSTSCRIPT;
+        PrintRequestAttributeSet aset = new HashPrintRequestAttributeSet();
+        aset.add(MediaSizeName.ISO_A4);
+        aset.add(new Copies(2));
+        aset.add(Sides.TWO_SIDED_LONG_EDGE);
+        aset.add(Finishings.STAPLE);
+
+        /* locate a print service that can handle it */
+        PrintService[] pservices = PrintServiceLookup.lookupPrintServices(flavor, aset);
+        if (pservices.length > 0) {
+            System.out.println("selected printer " + pservices[0].getName());
+
+            /* create a print job for the chosen service */
+            DocPrintJob pj = pservices[0].createPrintJob();
+            try {
+                /*
+                 * Create a Doc object to hold the print data.
+                 * Since the data is postscript located in a disk file,
+                 * an input stream needs to be obtained
+                 * BasicDoc is a useful implementation that will if requested
+                 * close the stream when printing is completed.
+                 */
+                FileInputStream fis = new FileInputStream("castedVotes.csv");
+                Doc doc = new SimpleDoc(fis, flavor, null);
+
+                /* print the doc as specified */
+                pj.print(doc, aset);
+
+
+            } catch (IOException ie) {
+                System.err.println(ie);
+            } catch (PrintException e) {
+                System.err.println(e);
+            }
         }
     }
 }
