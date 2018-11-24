@@ -3,6 +3,8 @@ package com.csci360.electionapp.model;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import static com.csci360.electionapp.model.VoterCheck.hasVoted;
+
 public class VoterStorage {
 
     /**
@@ -38,7 +40,9 @@ public class VoterStorage {
             fileWriter.append(NEW_LINE_SEPARATOR);
 
 
-            System.out.println("The new voter was added to the file");
+
+
+            System.out.println("The voter was successfully registered in our system.");
 
 
         } catch (Exception e) {
@@ -54,4 +58,39 @@ public class VoterStorage {
         }
 
     }
+
+    /**
+     * Documents if a user has voted.
+     *
+     * @param voter
+     */
+    public static void userVoted(String username) {
+
+        String COMMA_DELIMITER = ",";
+
+        String NEW_LINE_SEPARATOR = "\n";
+
+        String FILE_HEADER = "username, hasVoted";
+
+        FileWriter fileWriter = null;
+        try {
+            fileWriter = new FileWriter("usersVoted.csv", true);
+            fileWriter.append(username);;
+            fileWriter.append(NEW_LINE_SEPARATOR);
+
+
+        } catch (Exception e) {
+            System.out.println("error while writing to the csv");
+            System.out.println(e);
+        } finally {
+            try {
+                fileWriter.flush();
+                fileWriter.close();
+            } catch (IOException e) {
+                System.out.println("error while closing file writer");
+            }
+        }
+
+    }
+
 }

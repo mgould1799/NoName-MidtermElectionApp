@@ -68,6 +68,7 @@ public class SignUpController {
      * @throws Exception
      */
     public void pressRegister(ActionEvent event) throws Exception {
+        if (!isInt(socialSecurityNumber.getText())) {return;}
         Voter newVoter=new Voter(firstName.getText(),lastName.getText(),dateOfBirth.getText(),address.getText(),socialSecurityNumber.getText(),userName.getText(),password.getText());
         if(!VoterCheck.isUserNameTaken(newVoter)) {
             VoterStorage.storeVoter(newVoter);
@@ -84,6 +85,17 @@ public class SignUpController {
         }
         else{
             change.setText("Please pick a new username. That one is taken.");
+        }
+    }
+
+    private boolean isInt(String input){
+        try {
+            int num = Integer.parseInt(input);
+            return true;
+        }
+        catch(NumberFormatException e){
+            System.out.println("Error: " + input + " is not a number!");
+            return false;
         }
     }
 }

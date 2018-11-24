@@ -141,4 +141,48 @@ public class VoterCheck {
 
 
     }
+
+    /**
+     * Checks if a user has voted before.
+     * @param
+     * @return
+     */
+
+    public static boolean hasVoted(String username){
+        boolean voteStatus = false;
+        BufferedReader fileReader=null;
+        //try to read the file. if it fails, the catch prints the stack trace
+        try{
+            fileReader=new BufferedReader(new FileReader("usersVoted.csv"));
+            String line="";
+            while ((line = fileReader.readLine()) != null) {
+                //get all tokens available in a line by splitting it by the commas
+                String[] tokens = line.split(",");
+                if(tokens.length>0) {
+                    if(tokens[0].equals(username)){
+                        voteStatus = true;
+                    }
+                    //if the userName exists it returns true
+                }
+
+            }
+
+        }
+        catch(Exception e){
+            System.out.println("Error while reading csv");
+            System.out.println(e);
+            e.printStackTrace();;
+        }
+        finally{
+            try{
+                fileReader.close();
+            }
+            catch(IOException e){
+                System.out.println("error while closing file reader");
+            }
+        }
+        return voteStatus;
+
+
+    }
 }

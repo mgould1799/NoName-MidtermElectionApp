@@ -1,6 +1,7 @@
 package com.csci360.electionapp.view;
 
 import com.csci360.electionapp.model.VoterCheck;
+import com.csci360.electionapp.model.VoterStorage;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -12,6 +13,8 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import com.csci360.electionapp.model.Voter;
+
+import static com.csci360.electionapp.model.VoterCheck.hasVoted;
 
 public class LoginPageController  {
     // Buttons
@@ -82,6 +85,11 @@ public class LoginPageController  {
         else {
             if (VoterCheck.verifyPassword(passwordField.getText()) && VoterCheck.verifyUserName(usernameField.getText())) {
                 try {
+                    if (hasVoted(usernameField.getText())){
+                        System.out.println("You have already voted. Unable to log in.");
+                        return;
+                    }
+                    VoterStorage.userVoted(usernameField.getText());
                     logInButton.getScene().getWindow().hide();
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("votingArea.fxml"));
                     Parent root1 = (Parent) fxmlLoader.load();

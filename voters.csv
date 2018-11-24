@@ -2,3 +2,6 @@ firstName,lastName,dateOfBirth,socialSecuirtyNumber,address,userName,password
 billybob,goat,7777,7777,7777,billybob,$2a$10$gtVKH3RqD0E0xMIKVEbAsOp/APOfnJzYd6Jovu9cBqB.BeDmuHAzS
 frank,beans,90808,08080,0808,frank,$2a$10$Y2.TJHdb04IIrTSJPaZD7e5gyi.QV92WwoeaeaMO8.JVBYEkHTLmW
 dude,dude,ljlj,jljljlj,ljjl,dude,$2a$10$Peb12h3TLlaiWEIL95vdxe5f01Z0ssmBQFToasToj2m.vPV8HtkqK
+erik,helm,1234,5678,1234,erikhelm,$2a$10$VKxB.4cMN2cGECiFIUR6nOtM6hW7fvD62Wsr59PMz0aEcycNAKoWW
+test,test,1234,5678,11,test,$2a$10$XjBAD2NRFavIBALijivBx.HmQngbh1bbLxFFDnbVNOJOQXAlIPwIO
+test,test,1234,5678,1234,erik,$2a$10$myOBaseKmdKoFKzikScGX.DWMB1/zKT4u3C.c4mBy5o9sO0zRNxga
