@@ -1,5 +1,6 @@
 package com.csci360.electionapp.view;
 
+import com.csci360.electionapp.model.VoterCheck;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -79,7 +80,7 @@ public class LoginPageController  {
             }
         }
         else {
-            if (random.verifyPassword(passwordField.getText()) && random.verifyUserName(usernameField.getText())) {
+            if (VoterCheck.verifyPassword(passwordField.getText()) && VoterCheck.verifyUserName(usernameField.getText())) {
                 try {
                     logInButton.getScene().getWindow().hide();
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("votingArea.fxml"));

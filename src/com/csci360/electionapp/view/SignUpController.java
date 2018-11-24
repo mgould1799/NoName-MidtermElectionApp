@@ -1,5 +1,7 @@
 package com.csci360.electionapp.view;
 
+import com.csci360.electionapp.model.VoterCheck;
+import com.csci360.electionapp.model.VoterStorage;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -9,6 +11,11 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import com.csci360.electionapp.model.Voter;
+import com.csci360.electionapp.model.VoterStorage;
+import com.csci360.electionapp.model.VoterCheck;
+
+import static com.csci360.electionapp.model.VoterCheck.isUserNameTaken;
+
 public class SignUpController {
 
     @FXML
@@ -62,8 +69,8 @@ public class SignUpController {
      */
     public void pressRegister(ActionEvent event) throws Exception {
         Voter newVoter=new Voter(firstName.getText(),lastName.getText(),dateOfBirth.getText(),address.getText(),socialSecurityNumber.getText(),userName.getText(),password.getText());
-        if(!newVoter.isUserNameTaken(newVoter)) {
-            newVoter.storeVoter(newVoter);
+        if(!VoterCheck.isUserNameTaken(newVoter)) {
+            VoterStorage.storeVoter(newVoter);
             try {
                 register.getScene().getWindow().hide();
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("successReg.fxml"));
