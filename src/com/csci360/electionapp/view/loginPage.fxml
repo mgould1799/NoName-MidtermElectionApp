@@ -32,7 +32,7 @@
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor></TextField>
-      <Button fx:id="logInButton" layoutX="217.0" layoutY="217.0" mnemonicParsing="false" onAction="#pressLogin" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: BF0A30;" text="Log In" textFill="WHITE" defaultButton="true">
+      <Button fx:id="logInButton" defaultButton="true" layoutX="217.0" layoutY="217.0" mnemonicParsing="false" onAction="#pressLogin" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: BF0A30;" text="Log In" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
@@ -43,6 +43,11 @@
       <Label alignment="CENTER" layoutX="469.0" layoutY="359.0" prefHeight="27.0" prefWidth="117.0" text="FoF Systems" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
          <font>
             <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalid" layoutX="217.0" layoutY="253.0" prefHeight="47.0" prefWidth="201.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="10.0" />
          </font>
       </Label>
    </children>

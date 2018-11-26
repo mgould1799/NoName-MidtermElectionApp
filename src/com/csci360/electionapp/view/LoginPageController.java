@@ -10,6 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import com.csci360.electionapp.model.Voter;
@@ -22,6 +23,8 @@ public class LoginPageController  {
     // Buttons
     @FXML private javafx.scene.control.Button regButton;
 
+    // Labels
+    @FXML private Label invalid;
 
 
     //ChoiceBox
@@ -86,7 +89,7 @@ public class LoginPageController  {
             if (VoterCheck.verifyPassword(passwordField.getText()) && VoterCheck.verifyUserName(usernameField.getText())) {
                 try {
                     if (hasVoted(usernameField.getText())){
-                        System.out.println("You have already voted. Unable to log in.");
+                        invalid.setText("You have already voted. Unable to log in.");
                         return;
                     }
                     VoterStorage.userVoted(usernameField.getText());
@@ -100,7 +103,7 @@ public class LoginPageController  {
                     e.printStackTrace();
                 }
             } else {
-                System.out.println("username and password doesn't exist. Try again.");
+                invalid.setText("Invalid username/password. Try again.");
             }
         }
     }

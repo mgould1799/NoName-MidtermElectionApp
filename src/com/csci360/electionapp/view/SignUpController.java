@@ -41,6 +41,10 @@ public class SignUpController {
 
     @FXML
     private Label change;
+    @FXML
+    private Label invSocial;
+    @FXML
+    private Label userNameTaken;
 
 
     /**
@@ -68,7 +72,10 @@ public class SignUpController {
      * @throws Exception
      */
     public void pressRegister(ActionEvent event) throws Exception {
-        if (!isInt(socialSecurityNumber.getText())) {return;}
+        if (!isInt(socialSecurityNumber.getText())) {
+            invSocial.setText("Enter a valid SSN.");
+            return;
+        }
         Voter newVoter=new Voter(firstName.getText(),lastName.getText(),dateOfBirth.getText(),address.getText(),socialSecurityNumber.getText(),userName.getText(),password.getText());
         if(!VoterCheck.isUserNameTaken(newVoter)) {
             VoterStorage.storeVoter(newVoter);
@@ -84,7 +91,7 @@ public class SignUpController {
             }
         }
         else{
-            change.setText("Please pick a new username. That one is taken.");
+            userNameTaken.setText("That username already exists. \n Please enter another.");
         }
     }
 
