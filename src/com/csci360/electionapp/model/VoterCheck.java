@@ -15,7 +15,7 @@ public class VoterCheck {
         BufferedReader fileReader=null;
         //try to read the file. if it fails, the catch prints the stack trace
         try{
-            fileReader=new BufferedReader(new FileReader("voters.csv"));
+            fileReader=new BufferedReader(new FileReader("./voters.csv"));
             String line="";
             while ((line = fileReader.readLine()) != null) {
                 //get all tokens available in a line by splitting it by the commas
@@ -61,7 +61,7 @@ public class VoterCheck {
         BufferedReader fileReader=null;
         //try to read the file. if it fails, the catch prints the stack trace
         try{
-            fileReader=new BufferedReader(new FileReader("voters.csv"));
+            fileReader=new BufferedReader(new FileReader("./voters.csv"));
             String line="";
             while ((line = fileReader.readLine()) != null) {
                 //get all tokens available in a line by splitting it by the commas
@@ -107,7 +107,7 @@ public class VoterCheck {
         //try to read the file. if it fails, the catch prints the stack trace
         boolean isRight=false;
         try{
-            fileReader=new BufferedReader(new FileReader("voters.csv"));
+            fileReader=new BufferedReader(new FileReader("./voters.csv"));
             String line="";
             fileReader.readLine();
             while ((line = fileReader.readLine()) != null) {
@@ -155,7 +155,7 @@ public class VoterCheck {
         BufferedReader fileReader=null;
         //try to read the file. if it fails, the catch prints the stack trace
         try{
-            fileReader=new BufferedReader(new FileReader("usersVoted.csv"));
+            fileReader=new BufferedReader(new FileReader("./usersVoted.csv"));
             String line="";
             while ((line = fileReader.readLine()) != null) {
                 //get all tokens available in a line by splitting it by the commas

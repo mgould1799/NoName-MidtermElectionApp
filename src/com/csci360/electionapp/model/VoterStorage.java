@@ -22,7 +22,7 @@ public class VoterStorage {
 
         FileWriter fileWriter = null;
         try {
-            fileWriter = new FileWriter("voters.csv", true);
+            fileWriter = new FileWriter("./voters.csv", true);
             fileWriter.append(voter.getFirstName());
             fileWriter.append(COMMA_DELIMITER);
             fileWriter.append(voter.getLastName());
@@ -74,7 +74,7 @@ public class VoterStorage {
 
         FileWriter fileWriter = null;
         try {
-            fileWriter = new FileWriter("usersVoted.csv", true);
+            fileWriter = new FileWriter("./usersVoted.csv", true);
             fileWriter.append(username);
             fileWriter.append(NEW_LINE_SEPARATOR);
 
