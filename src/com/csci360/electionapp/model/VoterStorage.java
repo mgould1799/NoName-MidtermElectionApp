@@ -62,7 +62,7 @@ public class VoterStorage {
     /**
      * Documents if a user has voted.
      *
-     * @param voter
+     * @param username
      */
     public static void userVoted(String username) {
 
@@ -75,7 +75,7 @@ public class VoterStorage {
         FileWriter fileWriter = null;
         try {
             fileWriter = new FileWriter("usersVoted.csv", true);
-            fileWriter.append(username);;
+            fileWriter.append(username);
             fileWriter.append(NEW_LINE_SEPARATOR);
 
 

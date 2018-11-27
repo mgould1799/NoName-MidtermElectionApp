@@ -87,20 +87,24 @@ public class LoginPageController  {
         }
         else {
             if (VoterCheck.verifyPassword(passwordField.getText()) && VoterCheck.verifyUserName(usernameField.getText())) {
-                try {
-                    if (hasVoted(usernameField.getText())){
-                        invalid.setText("You have already voted. Unable to log in.");
-                        return;
+                if (!hasVoted(usernameField.getText())) {
+
+                    try {
+
+
+                        VoterStorage.userVoted(usernameField.getText());
+                        logInButton.getScene().getWindow().hide();
+                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("votingArea.fxml"));
+                        Parent root1 = (Parent) fxmlLoader.load();
+                        Stage stage = new Stage();
+                        stage.setScene(new Scene(root1));
+                        stage.show();
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
-                    VoterStorage.userVoted(usernameField.getText());
-                    logInButton.getScene().getWindow().hide();
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("votingArea.fxml"));
-                    Parent root1 = (Parent) fxmlLoader.load();
-                    Stage stage = new Stage();
-                    stage.setScene(new Scene(root1));
-                    stage.show();
-                } catch (Exception e) {
-                    e.printStackTrace();
+                }
+                else{
+                    invalid.setText("You have already voted. Unable to log in.");
                 }
             } else {
                 invalid.setText("Invalid username/password. Try again.");
