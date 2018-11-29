@@ -1,9 +1,9 @@
 package com.csci360.electionapp.model;
 
+import com.csci360.electionapp.Security.BCrypt;
+
 import java.io.FileWriter;
 import java.io.IOException;
-
-import static com.csci360.electionapp.model.VoterCheck.hasVoted;
 
 public class VoterStorage {
 

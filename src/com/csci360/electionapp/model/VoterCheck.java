@@ -1,5 +1,7 @@
 package com.csci360.electionapp.model;
 
+import com.csci360.electionapp.Security.BCrypt;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;

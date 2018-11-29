@@ -244,7 +244,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543452091094" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543452153091" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
@@ -278,7 +278,7 @@
       <module name="myVotingSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.csci360.electionapp.model.*" />
+          <option name="PATTERN" value="com.csci360.electionapp.Security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

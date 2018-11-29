@@ -12,7 +12,7 @@
 // ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 // OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-package com.csci360.electionapp.model;
+package com.csci360.electionapp.Security;
 
 import java.io.UnsupportedEncodingException;
 

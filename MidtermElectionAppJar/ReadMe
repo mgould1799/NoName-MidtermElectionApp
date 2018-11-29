@@ -4,4 +4,4 @@ to log in and vote. An admin can also log in to tally and print the votes from t
 To run this, click on the NoName-MidertermElectionApp.jar file. It is important that the castedVotes.csv, userVoted.csv,
 and voters.csv are within the same file as the jar file.
 
-This was created by Meagan Gould, Stephen Green, Erik Helm, and Daniel Baczmaga. 
+This was created by Meagan Gould, Stephen Green, Erik Helm, and Daniel Baczmaga.
