@@ -7,9 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d03abb6c-c437-4b79-a5f0-e3b94b392998" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MidtermElectionAppJar/ReadMe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myVotingSystem_jar/castedVotes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myVotingSystem_jar/usersVoted.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myVotingSystem_jar/voters.csv" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,17 +39,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterCheck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
+            <state relative-caret-position="2325">
               <caret line="157" column="58" selection-start-line="157" selection-start-column="58" selection-end-line="157" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterStorage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
+            <state relative-caret-position="546">
               <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MidtermElectionAppJar/ReadMe">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -128,6 +139,7 @@
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/view/LoginPageController.java" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterCheck.java" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterStorage.java" />
+        <option value="$PROJECT_DIR$/MidtermElectionAppJar/ReadMe" />
       </list>
     </option>
   </component>
@@ -151,61 +163,71 @@
         <subPane>
           <expand>
             <path>
-              <item name="myVotingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myVotingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myVotingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myVotingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
+              <item name="MidtermElectionAppJar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myVotingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myVotingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myVotingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myVotingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
               <item name="myVotingSystem_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myVotingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myVotingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myVotingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myVotingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="electionapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myVotingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myVotingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="electionapp" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myVotingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myVotingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="electionapp" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myVotingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myVotingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myVotingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myVotingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -222,7 +244,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543258498523" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543452091094" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
@@ -233,6 +255,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MidtermElectionAppJar" />
       <recent name="$PROJECT_DIR$/src/com/csci360/electionapp/view" />
       <recent name="$PROJECT_DIR$/src/com/csci360/electionapp/interface" />
     </key>
@@ -332,16 +355,18 @@
       <workItem from="1543281361547" duration="12000" />
       <workItem from="1543281438930" duration="402000" />
       <workItem from="1543336493912" duration="712000" />
+      <workItem from="1543450886192" duration="569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44198000" />
+    <option name="totallyTimeSpent" value="44767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21959943" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22246066" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -445,8 +470,8 @@
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/castedVotes.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/SuccessRegController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -516,20 +541,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/voters.csv">
-      <provider editor-type-id="csv-text-editor" />
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="77" selection-start-column="77" selection-end-column="77" />
         </state>
       </provider>
+      <provider editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/usersVoted.csv">
-      <provider editor-type-id="csv-text-editor" />
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="8" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
+      <provider editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/loginPage.fxml">
       <provider selected="true" editor-type-id="text-editor">
@@ -538,6 +563,13 @@
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2325">
+          <caret line="157" column="58" selection-start-line="157" selection-start-column="58" selection-end-line="157" selection-end-column="58" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/SubmitController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -567,17 +599,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterCheck.java">
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterStorage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="157" column="58" selection-start-line="157" selection-start-column="58" selection-end-line="157" selection-end-column="58" />
+        <state relative-caret-position="546">
+          <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterStorage.java">
+    <entry file="file://$PROJECT_DIR$/MidtermElectionAppJar/ReadMe">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+        <state relative-caret-position="90">
+          <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
         </state>
       </provider>
     </entry>
