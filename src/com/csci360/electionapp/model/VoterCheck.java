@@ -119,9 +119,10 @@ public class VoterCheck {
                     //creates a tempory voter
                     Voter tempVoter=new Voter(tokens[0],tokens[1],tokens[2],tokens[3],tokens[4],tokens[5],tokens[6]);
                     //if the userName exists it returns true
-                    if(BCrypt.checkpw(givenPassword,tempVoter.getPassword())) {
+                    if(BCrypt.checkpw(givenPassword,tokens[6])) {
                         isRight = true;
                         System.out.println("Is right var " + isRight);
+                        return true;
                     }
                 }
 

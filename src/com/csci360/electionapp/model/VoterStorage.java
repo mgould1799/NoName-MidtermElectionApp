@@ -1,5 +1,6 @@
 package com.csci360.electionapp.model;
 
+import com.csci360.electionapp.Security.AES;
 import com.csci360.electionapp.Security.BCrypt;
 
 import java.io.FileWriter;
@@ -27,11 +28,11 @@ public class VoterStorage {
             fileWriter.append(COMMA_DELIMITER);
             fileWriter.append(voter.getLastName());
             fileWriter.append(COMMA_DELIMITER);
-            fileWriter.append(voter.getDateOfBirth());
+            fileWriter.append(AES.encrypt(voter.getDateOfBirth()));
             fileWriter.append(COMMA_DELIMITER);
-            fileWriter.append(voter.getSocialSecurityNumber());
+            fileWriter.append(AES.encrypt(voter.getSocialSecurityNumber()));
             fileWriter.append(COMMA_DELIMITER);
-            fileWriter.append(voter.getAddress());
+            fileWriter.append(AES.encrypt(voter.getAddress()));
             fileWriter.append(COMMA_DELIMITER);
             fileWriter.append(voter.getUserName());
             fileWriter.append(COMMA_DELIMITER);
