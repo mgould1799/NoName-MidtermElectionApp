@@ -7,11 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d03abb6c-c437-4b79-a5f0-e3b94b392998" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/castedVotes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/castedVotes.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usersVoted.csv" beforeDir="false" afterPath="$PROJECT_DIR$/usersVoted.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voters.csv" beforeDir="false" afterPath="$PROJECT_DIR$/voters.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MidtermElectionAppJar/castedVotes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MidtermElectionAppJar/castedVotes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MidtermElectionAppJar/usersVoted.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MidtermElectionAppJar/usersVoted.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MidtermElectionAppJar/voters.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MidtermElectionAppJar/voters.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/HashTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myVotingSystem_jar/myVotingSystem.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/HashTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/Security/AES.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/Security/AES.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myVotingSystem/com/csci360/electionapp/model/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/csci360/electionapp/Security/AES.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/Security/AES.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,87 +42,105 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterCheck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1770">
-              <caret line="122" column="39" lean-forward="true" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterStorage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-489">
-              <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MidtermElectionAppJar/ReadMe">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/SubmitController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/SignUpController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/Security/AES.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Voter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/LoginPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="106" column="81" selection-start-line="106" selection-start-column="81" selection-end-line="106" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/voters.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="122" lean-forward="true" selection-start-line="16" selection-start-column="122" selection-end-line="16" selection-end-column="122" />
+              <caret line="16" column="122" selection-start-line="16" selection-start-column="122" selection-end-line="16" selection-end-column="122" />
             </state>
           </provider>
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MidtermElectionAppJar/usersVoted.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MidtermElectionAppJar/voters.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state>
+              <caret column="77" selection-start-column="77" selection-end-column="77" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MidtermElectionAppJar/castedVotes.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/VoterCheckTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/AdminTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="154" column="61" selection-start-line="154" selection-start-column="61" selection-end-line="154" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/VoterStorageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/AESTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/VoterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -149,7 +173,6 @@
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/MainLogin.java" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/view/loginPage.fxml" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/BCrypt.java" />
-        <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/view/AdminLoginController.java" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/Hash.java" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/Voter.java" />
@@ -158,11 +181,17 @@
         <option value="$PROJECT_DIR$/usersVoted.csv" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/view/LoginPageController.java" />
         <option value="$PROJECT_DIR$/MidtermElectionAppJar/ReadMe" />
-        <option value="$PROJECT_DIR$/src/com/csci360/electionapp/Security/AES.java" />
         <option value="$PROJECT_DIR$/Tests/AESTest.java" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterStorage.java" />
         <option value="$PROJECT_DIR$/voters.csv" />
         <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterCheck.java" />
+        <option value="$PROJECT_DIR$/src/com/csci360/electionapp/Security/AES.java" />
+        <option value="$PROJECT_DIR$/Tests/VoterCheckTest.java" />
+        <option value="$PROJECT_DIR$/Tests/VoterStorageTest.java" />
+        <option value="$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java" />
+        <option value="$PROJECT_DIR$/MidtermElectionAppJar/castedVotes.csv" />
+        <option value="$PROJECT_DIR$/MidtermElectionAppJar/usersVoted.csv" />
+        <option value="$PROJECT_DIR$/MidtermElectionAppJar/voters.csv" />
       </list>
     </option>
   </component>
@@ -182,6 +211,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,6 +223,24 @@
               <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
               <item name="MidtermElectionAppJar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="myVotingSystem_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
@@ -216,20 +264,6 @@
               <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="electionapp" type="462c0819:PsiDirectoryNode" />
-              <item name="Security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="electionapp" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NoName-MidtermElectionApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NoName-MidtermElectionApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -242,7 +276,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,7 +284,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543455711417" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543500909344" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
@@ -363,18 +396,20 @@
       <workItem from="1543281438930" duration="402000" />
       <workItem from="1543336493912" duration="712000" />
       <workItem from="1543450886192" duration="569000" />
-      <workItem from="1543454236381" duration="1317000" />
+      <workItem from="1543454236381" duration="1644000" />
+      <workItem from="1543457115645" duration="151000" />
+      <workItem from="1543500328941" duration="575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46084000" />
+    <option name="totallyTimeSpent" value="47137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23104435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -383,7 +418,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49499285" visible="true" weight="0.20636943" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49427754" weight="0.20636943" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -391,7 +426,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50500715" side_tool="true" visible="true" weight="0.20636943" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50572246" side_tool="true" visible="true" weight="0.20636943" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49928468" weight="0.32611465" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -478,8 +513,8 @@
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/castedVotes.csv">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/SuccessRegController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -490,13 +525,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/HashTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/BCrypt.java" />
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/AdminLoginController.java">
@@ -513,13 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2652">
-          <caret line="168" column="1" selection-start-line="168" selection-start-column="1" selection-end-line="168" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Hash.java" />
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/VotingAreaController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -528,27 +549,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/VoterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/AdminTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/usersVoted.csv">
+      <provider editor-type-id="csv-text-editor" />
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="8" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
-      <provider editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/loginPage.fxml">
       <provider selected="true" editor-type-id="text-editor">
@@ -558,10 +565,41 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Voter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        <state relative-caret-position="546">
+          <caret line="122" column="39" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/SubmitController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/SignUpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/Security/AES.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
@@ -572,10 +610,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/SignUpController.java">
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Voter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+        <state relative-caret-position="165">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/LoginPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="106" column="81" selection-start-line="106" selection-start-column="81" selection-end-line="106" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voters.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="122" selection-start-line="16" selection-start-column="122" selection-end-line="16" selection-end-column="122" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret column="77" selection-start-column="77" selection-end-column="77" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/VoterStorageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/VoterCheckTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/HashTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -589,54 +675,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/SubmitController.java">
+    <entry file="file://$PROJECT_DIR$/Tests/VoterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="496">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/Security/AES.java">
+    <entry file="file://$PROJECT_DIR$/Tests/AdminTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="30">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/view/LoginPageController.java">
+    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="106" column="81" selection-start-line="106" selection-start-column="81" selection-end-line="106" selection-end-column="81" />
+        <state relative-caret-position="315">
+          <caret line="154" column="61" selection-start-line="154" selection-start-column="61" selection-end-line="154" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/voters.csv">
-      <provider editor-type-id="text-editor">
-        <state>
-          <caret column="77" selection-start-column="77" selection-end-column="77" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="122" lean-forward="true" selection-start-line="16" selection-start-column="122" selection-end-line="16" selection-end-column="122" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/MidtermElectionAppJar/castedVotes.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-489">
-          <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/MidtermElectionAppJar/usersVoted.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csci360/electionapp/model/VoterCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="122" column="39" lean-forward="true" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
+    <entry file="file://$PROJECT_DIR$/MidtermElectionAppJar/voters.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="77" selection-start-column="77" selection-end-column="77" />
         </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
       </provider>
     </entry>
   </component>

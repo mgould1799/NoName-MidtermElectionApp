@@ -152,7 +152,7 @@ public class Admin {
                  * BasicDoc is a useful implementation that will if requested
                  * close the stream when printing is completed.
                  */
-                FileInputStream fis = new FileInputStream("castedVotes.csv");
+                FileInputStream fis = new FileInputStream("./castedVotes.csv");
                 Doc doc = new SimpleDoc(fis, flavor, null);
 
                 /* print the doc as specified */

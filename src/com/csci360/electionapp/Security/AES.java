@@ -59,18 +59,5 @@ public class AES {
         }
         return decryptedText;
     }
-    
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter String : ");
-        String plainString = sc.nextLine();
-        
-        String encyptStr   = encrypt(plainString);
-        String decryptStr  = decrypt(encyptStr);
-        
-        System.out.println("Plain   String  : "+plainString);
-        System.out.println("Encrypt String  : "+encyptStr);
-        System.out.println("Decrypt String  : "+decryptStr);
-        
-    }  
+
 }
